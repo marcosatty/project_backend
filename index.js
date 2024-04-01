@@ -24,7 +24,7 @@ const bibliotecaRouters = require('./routes/bibliotecaRouters')
 //const BibliotecaControllers = require ('./controllers/BibliotecaController')
 
 //IMPORT CONTROLLER
-//const { DATE } = require('sequelize') COMANDO QUE COMENTEI
+const { DATE } = require('sequelize') 
 const BibliotecaController = require('./controllers/BibliotecaController')
 
 //template do engine
