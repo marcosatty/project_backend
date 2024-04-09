@@ -18,13 +18,15 @@ const User = require('./models/User')
 
 //IMPORT routers
 const bibliotecaRouters = require('./routes/bibliotecaRouters')
+const authRouters = require('./routes/authRouters')
+
 
 //IMPORT CONTROLLER
 //IMPORT CONTROLLER troquei o nome e coloquei + 1 S
 //const BibliotecaControllers = require ('./controllers/BibliotecaController')
 
 //IMPORT CONTROLLER
-const { DATE } = require('sequelize') 
+//const { DATE } = require('sequelize') 
 const BibliotecaController = require('./controllers/BibliotecaController')
 
 //template do engine
@@ -60,7 +62,7 @@ app.use(
     }),
 )
 
-//conficuração flash messagens
+//conficuração flash messagens que iram aparecer nas confirmações de senha
 app.use(flash())
 
 //public path
@@ -80,7 +82,7 @@ app.use((req, res, next) => {
 
 //rotas sendo feita ( esta sendo importada no IMPORT routers)
 app.use('/biblioteca', bibliotecaRouters )
-
+app.use('/', authRouters )
 
 
 app.get ('/', BibliotecaController.showBiblioteca) 

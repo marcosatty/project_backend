@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    /*margin: 0;
+    padding: 0;*/
+    box-sizing: border-box;
+    color: #fff;
+}
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),url(/img/fundo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+   /* padding: auto;*/
+    
+}
+
+/*PERSONALIZAÇÃO logo IMAGEM NAVBAR*/
+
+#logo img{
+    height: 5.3rem;
+    margin-left: 70px;
+    margin-top: 15px;
+
+}
+
+
+#navbar {
+    padding: 1.2em 0em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+    justify-content: left;
+    align-items: center;
+    
+}
+
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+
+#navbar ul li{
+    margin-left: 2em;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    transition: 0.5s;
+    font-weight: bolder;
+    font-size: 42px;
+}
+
+#navbar ul li a:hover{
+    border-bottom: 7px solid #b62f2f;
+    border-radius: 25px;
+   
+}
+
+/*CONTAINER*/
+
+.container{
+    min-height: 73.1vh;
+    padding: 2em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #b62f2f;
+    margin-bottom: 40px;
+    height: 30px;
+}
+
+
+
+/*CSS DA PAGINA CADASTRAR !!ATENÇÃO!!*/
+
+.auth-container{
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/* estilizando o h2 chamado cadastrar*/
+.auth-container h2{
+    margin-bottom: 2em;
+    color: #fff;
+    border-left: 4px solid #b62f2f;
+    padding: 0.4em;
+    width: 100px;
+    margin-top: -20px;
+    text-align: center;
+    font-size: 25px;
+
+}
+
+/*MUDANDO COR DO LINK*/
+.auth-container a{
+    color: #b62f2f;
+    text-decoration: none;
+}
+
+/*MEXENDO NO FORMULARIO*/
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.2em;
+    margin-top: -40px;
+    
+}
+
+/*TRABALHANDO NA LABEL ONDE IREI MODIFICAR OS NOMES */
+.form-control label{
+    font-weight: bold;
+    margin-bottom: 0.2em;
+    
+}
+
+/* MODIFICANDO OS INPUNTS */
+.form-control input,
+.form-control textarea{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1.7px solid #b62f2f;
+    color: #fff;
+    font-weight: bold;
+    background-color: #1C1C1C;
+
+}
+
+
+/*MODIFICANDO O BOTÃO*/
+
+form input[type='submit'],
+.btn {
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 25px;
+    font-weight: bold;
+    width: 11rem;
+    height: 50px;
+    margin-bottom: 6em;
+    background-color: #b62f2f;
+    border-radius: 25px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -25px;
+    
+}
+form p{
+   margin-top: -8rem;
+   
+}
+
+
+/*ESTILIZANDO A MENSAGEM (message) */
+
+.message {
+    background-color: #b62f2f;
+    text-align: center;
+    margin: 0 auto 2em; /*serve para imagem não ficar grudada*/
+    max-width: 45%;
+    padding: .4em;
+    border-radius: 10px;
+}

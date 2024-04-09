@@ -1,12 +1,12 @@
 const { Sequelize } = require('sequelize')
 
-const sequelize = new Sequelize('biblioteca','antony','123456',{
+const sequelize = new Sequelize('biblioteca','antony','123456', {
     host: 'localhost',
     dialect: 'mysql',
 
 })
 
-try{
+try {
     sequelize.authenticate()
     console.log('Conectado com sucesso')
 }catch(err){
