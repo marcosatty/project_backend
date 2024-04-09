@@ -31,12 +31,12 @@ module.exports = class AuthController{
     
 
     //validação da password
-    if (password != confirmpassword) {
-        req.flash('message', 'As senhas não conferem, tente novamente!')
-       res.render('auth/register')
+   //if (password != confirmpassword) {
+       // req.flash('message', 'As senhas não conferem, tente novamente!')
+       //res.render('auth/register')
   
-        return
-      }
+        //return
+      //}
 
     //check if se o usuario existe
     const checkIfUserExists = await User.findOne({ where: { email: email }})
