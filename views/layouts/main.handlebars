@@ -18,13 +18,24 @@
     <a href="/" id ="logo">
     <img src="/img/logo.png" alt="logo">
     </a>
-    
     <ul>
         <li><a href="/"><i class = "bi bi-book-fill"></i></a></li>
+        
         <!-- URLS apos cadastro-->
+       
+        {{#if session.userid }}
+
+    <!--se estiver logado -->
+<!--Dashboard--><li><a href="/biblioteca/dashboard"><i class="bi bi-file-earmark-slides-fill"></i></a></li>
+<!--Sair--><li><a href="/logout"><i class="bi bi-x-circle-fill"></i></a></li>
+        
+        {{else}} <!--se não tiver logado-->
         <li><a href="/login"><i class="bi bi-person-fill-check"></i></a></li>
         <li><a href="/cadastrar"><i class="bi bi-person-fill-add"></i></a></li>
         <li><a href="/sobre"><i class="bi bi-info-circle-fill"></i></a></li>
+        
+        {{/if}}
+
     </ul>
 
 </nav>
@@ -41,18 +52,13 @@
 
      {{/if }}
 
-
-     <!--{{#if message}}
-       
-   <div class="message">
-
-    {{message}}
-    
-   </div> 
-
-     {{/if }}-->
-
-     
+     <!--
+    {{#if message}}
+        <div class="message">
+            {{message}}
+        </div> 
+    {{/if}}
+    -->
 
     {{{ body }}}
 
