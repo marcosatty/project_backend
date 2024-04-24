@@ -9,6 +9,7 @@ const sequelize = new Sequelize('biblioteca','antony','123456', {
 try {
     sequelize.authenticate()
     console.log('Conectado com sucesso')
+    
 }catch(err){
     console.log(`Não foi possivel conectar: ${err}`)
 }
