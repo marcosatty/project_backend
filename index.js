@@ -13,7 +13,7 @@ const conn = require('./db/conn')
 
 
 // Models
-const biblioteca = require('./models/biblioteca')
+const Biblioteca = require('./models/biblioteca')
 const User = require('./models/User')
 
 //IMPORT routers

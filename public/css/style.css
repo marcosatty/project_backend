@@ -143,8 +143,7 @@ footer{
 
 /*MODIFICANDO O BOTÃO*/
 
-form input[type='submit'],
-.btn {
+form input[type='submit'] {
     color: #fff;
     border: 2px solid #fff;
     font-size: 25px;
@@ -157,6 +156,18 @@ form input[type='submit'],
     cursor: pointer;
     text-decoration: none;
 
+}
+.btn {
+    color: #fff;
+    border: 2px solid #fff;
+    height: 11rem; 
+    width: 200px; 
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #b62f2f;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .botao{
@@ -182,3 +193,45 @@ form p{
     padding: .4em;
     border-radius: 10px;
 }
+.messageloginecadastro {
+    background-color: #2fb663;
+    text-align: center;
+    margin: 0 auto 2em; /*serve para imagem não ficar grudada*/
+    max-width: 45%;
+    padding: .4em;
+    border-radius: 10px;
+}
+
+/* ESTILIZAÇÃO DO CREATE E DO EDIT FORM */
+/* link do form */
+.biblioteca-form-container  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.biblioteca-form-container a:hover {
+    color: #b62f2f;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+.biblioteca-form-container  h1 {
+    margin-bottom: 2em;
+    color: #fff;
+    border-left: 4px solid #b62f2f;
+    padding: 0.3em;
+    width: 100px;
+    font-size: 25px;
+    white-space: nowrap;
+}
+
+.biblioteca-form-container {
+    max-width: 50%;
+}
+
+

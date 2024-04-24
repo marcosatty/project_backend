@@ -1,0 +1,21 @@
+<div  class="dashboard">
+    <div class="title-container">
+        <h2> DASHBOARD </h2>
+        <a href="/biblioteca/add"  class="btn">Adicionar</a>
+    </div>
+    <h3>SEUS LIVROS CADASTRADOS</h3>
+
+<ul>
+    {{#each bibliotecas}}
+
+    <li>
+        <span class="label">{{this.title}}</span>
+        <span class="actions">
+            <a href="/" class="btn">Editar</a>
+        </span>
+    </li>
+    
+    {{/each}}
+</ul>
+
+</div>

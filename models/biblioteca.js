@@ -5,7 +5,7 @@ const db = require("../db/conn")
 //User/ modo de usuario 
 const User = require("../models/User")
 
-const biblioteca = db.define("biblioteca",{
+const Biblioteca = db.define("biblioteca",{
     title: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -13,7 +13,7 @@ const biblioteca = db.define("biblioteca",{
     },
 });
 
-biblioteca.belongsTo(User);
-User.hasMany(biblioteca);
+Biblioteca.belongsTo(User);
+User.hasMany(Biblioteca);
 
-module.exports = biblioteca
+module.exports = Biblioteca

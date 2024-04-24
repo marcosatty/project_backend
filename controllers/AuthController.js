@@ -5,8 +5,8 @@ const User = require('../models/User')
 const bcrypt = require('bcryptjs')
 
 
-//module.exports = class UserController{
-module.exports = class AuthController{
+module.exports = class UserController{
+//module.exports = class AuthController{
     
     static login(req, res){
         res.render('auth/login')
@@ -21,7 +21,7 @@ module.exports = class AuthController{
     
         if(!user){
 
-        req.flash('message', 'Não existe cadastro com esse E-mail, Por favor realizer seu cadastro')
+        req.flash('message1', 'Não existe cadastro com esse E-mail, Por favor realizer seu cadastro')
         res.render('auth/login')
             return
 
@@ -41,7 +41,7 @@ module.exports = class AuthController{
 
         req.session.userid = user.id
         //caso eu queira tirar a mensagem apos realizado o login, so remover o req flash
-        req.flash('message', 'Autenticação Realizada com Exito!')
+        req.flash('message1', 'Autenticação Realizada com Exito!')
   
         req.session.save(() => {
             res.redirect('/')
@@ -113,7 +113,7 @@ module.exports = class AuthController{
         //inicializar a sessão do usurario
         req.session.userid = createdUser.id
         //esse message é a estilização do css
-        req.flash('message', 'Cadastro Realizado com Sucesso!')
+        req.flash('message1', 'Cadastro Realizado com Sucesso!')
 
         req.session.save(() => {
             res.redirect('/')
